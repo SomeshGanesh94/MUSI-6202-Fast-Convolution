@@ -1,5 +1,5 @@
-%Question 4: Spectrogram
-%Somesh Ganesh
+%Generating blocks
+%Somesh Ganesh and Nikhil Bhanu
 function [t,X] = generateBlocks(x, sample_rate_Hz, block_size, hop_size)
 
 block_duration = block_size/sample_rate_Hz;

@@ -3,7 +3,8 @@
 
 function [m, mabs, stdev, time] = compareConv(x, h)
     tic;
-    y_freq = myFastConvolution(x, h);
+%     y_freq = myFastConvolution(x, h);
+    y_freq = myUniformConvolution(x, h);
     t_freq = toc;
     tic;
     y_conv = conv(x, h);
